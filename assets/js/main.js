@@ -16,6 +16,38 @@
     }
   });
 
+  $('#sel_lang li').on('click', function() {
+    $(this).parent().prepend(this);
+  });
+
+  $('#lang').on('click', 'li a', function(e){
+    change_lang();
+  });
+
+  var dictionary = {
+          'greet': {
+              'gr': 'Γεια',
+              'en': 'Hello',
+              'fr': 'Salut',
+          }
+  };
+  var langs = ['gr', 'en', 'fr'];
+  var current_lang_index = 0;
+  var current_lang = langs[current_lang_index];
+
+  window.change_lang = function() {
+      current_lang_index = ++current_lang_index % 3;
+      current_lang = langs[current_lang_index];
+      translate();
+  }
+
+  function translate() {
+      $("[data-translate]").each(function(){
+          var key = $(this).data('translate');
+          $(this).html(dictionary[key][current_lang] || "N/A");
+      });
+  }
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
