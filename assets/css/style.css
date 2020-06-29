@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #5846f9;
+  background: #0080d6;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #7b27d8;
+  background: #0053d6;
   color: #fff;
 }
 
@@ -610,12 +610,20 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(45deg, rgba(6, 58, 250, 0.7) 0%, rgba(6, 58, 250, 0.7) 100%);
+  background: linear-gradient(45deg, rgba(6, 58, 250, 0.7) 0%, #0080d6 100%);
   position: relative;
 }
 
+/*background: #0080d6;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #0053d6;*/
+
 .about .content .read-more:hover {
-  background: linear-gradient(180deg, rgba(6, 58, 250, 0.7) 0%, #7b27d8 100%);
+  background: linear-gradient(180deg, rgba(6, 58, 250, 0.7) 0%, #0053d6 100%);
 }
 
 .about .content .read-more i {
@@ -792,7 +800,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5846f9;
+  color: #0053d6;
 }
 
 .features .icon-box p {
