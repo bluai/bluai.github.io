@@ -135,6 +135,16 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+#h1 {
+  font-size: 46px !important;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 #header .logo a {
   color: #fff;
 }
@@ -792,6 +802,11 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
+#features{
+  padding-bottom: 250px;
+}
+
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
@@ -1669,5 +1684,65 @@ section {
 }
 
 .ai{
-  color: #1a00f2
+  color: #1a00f2;
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+/*.level1, .level2 {
+    display: none;
+}
+.row.level1:hover .level2 {
+    display: block;
+}
+.level0:hover .level1 {
+    display: block;
+}*/
+
+.wrap {
+  position: absolute;
+  top:0;right:0;bottom:0;left:0;
+  max-width: 1200px;
+  min-width: 300px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.svg-wrap {
+  width: 100%;
+  margin: auto;
+  height: 200px;
+}
+
+#svg {
+  width: 100%; 
+  height: auto;
+}
+
+.is-loading {
+  opacity: 0;
+}
+
+// fix fouc in safari and mobile browsers when path segment are of length 0
+#box1,
+#box2,
+#box3,
+#box4,
+#arrow2,
+#arrow3,
+#arrowhead2,
+#arrowhead3 {
+    opacity: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
